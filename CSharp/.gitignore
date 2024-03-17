@@ -4,9 +4,9 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # 걍 내 폴더들
-교재/
-과제/
-Sol202344018_김대희/
+book/
+assignment/
+Sol202344018_KimDaehee/
 
 # User-specific files
 *.rsuser
