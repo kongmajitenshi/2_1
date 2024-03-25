@@ -45,22 +45,22 @@ if __name__ == "__main__" :
     
 	
 	while(True):
-		menu = int(input("선택하세요(1: 추가, 2: 삽입, 3: 삭제, 4: 종료)--> "))
+		menu = input("선택하세요(1: 추가, 2: 삽입, 3: 삭제, 4: 종료)--> ")
 
-		if (menu == 1) :
+		if (menu == '1') :
 			data = input("추가할 데이터 ")
 			add_data(data)
 			print(katok)
-		elif (menu == 2) :
+		elif (menu == '2') :
 			pos = int(input("삽입 위치: "))
 			data = input("추가할 데이터: ")
 			insert_data(pos, data)
 			print(katok)
-		elif (menu == 3) :
+		elif (menu == '3') :
 			pos = int(input("삭제 위치: "))
 			delete_data(pos)
 			print(katok)
-		elif (menu == 4) :
+		elif (menu == '4') :
 			print(katok)
 			break # exit() 는 강제종료. break는 그냥 탈출용.
 		else :
