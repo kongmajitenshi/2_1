@@ -28,6 +28,7 @@ px = [7, -4, 5]
 # = 7x^300 -4x^20 +5
 
 if __name__ == "__main__":
+    print(id(tx[0]), id(tx[1]), id(tx[2]))
     p_str = print_poly(px, tx)
     print(p_str)
 
@@ -35,5 +36,3 @@ if __name__ == "__main__":
 
     px_value = calculation_poly(x_value, px, tx)
     print(px_value)
-
-
