@@ -18,7 +18,7 @@ def print_poly(p_x):
 	return poly_str
 
 
-def calc_poly(x_val, p_x) :
+def calculation_poly(x_val, p_x) :
 	ret_value = 0
 	term = len(p_x) - 1	# 최고차항 숫자 = 배열길이-1
 
@@ -40,7 +40,7 @@ if __name__ == "__main__" :
 
 	x_value = int(input("X 값-->"))
 
-	px_value = calc_poly(x_value, px)
+	px_value = calculation_poly(x_value, px)
 	print(px_value)
 
 	
