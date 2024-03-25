@@ -1,13 +1,14 @@
-## 함수 선언 부분 ## 
 def print_poly(p_x):
 	term = len(p_x) - 1# 최고차항 숫자 = 배열길이-1
 	poly_str = "P(x) = "
 	
 	for i in range(len(px)):
 		coef = p_x[i]# 계수
+
 		if coef == 0:
 			term = term - 1
 			continue
+
 		if coef >= 0 and i > 0:
 			poly_str += "+"
 		# poly_str += str(coef) + "x^" + str(term) + " "
@@ -20,7 +21,7 @@ def print_poly(p_x):
 def calc_poly(x_val, p_x) :
 	ret_value = 0
 	term = len(p_x) - 1	# 최고차항 숫자 = 배열길이-1
-	
+
 	for i in range(len(px)) :
 		coef = p_x[i]	# 계수
 		ret_value += coef * x_val ** term
@@ -29,11 +30,9 @@ def calc_poly(x_val, p_x) :
 	return ret_value
 
 
-## 전역 변수 선언 부분 ## 
-px = [7, -4, 0, 5]			# = 7x^3 -4x^2 +0x^1 +5x^0 
+px = [7, -4, 0, 5]			# = 7x^3 -4x^2 +0x^1 +5x^0
 
 
-## 메인 코드 부분 ## 
 if __name__ == "__main__" :
 
 	p_str = print_poly(px)
