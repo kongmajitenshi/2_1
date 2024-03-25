@@ -2,8 +2,8 @@
 def add_data(friend) :
     
 	katok.append(None)
-	kLen = len(katok)
-	katok[kLen-1] = friend
+	k_len = len(katok)
+	katok[k_len-1] = friend
 
 
 def insert_data(position, friend) :
@@ -13,9 +13,9 @@ def insert_data(position, friend) :
 		return
     
 	katok.append(None)   # 빈칸 추가
-	kLen = len(katok)       # 배열의 현재 크기
+	k_len = len(katok)       # 배열의 현재 크기
 
-	for i in range(kLen-1, position, -1) :
+	for i in range(k_len-1, position, -1) :
 		katok[i] = katok[i-1]
 		katok[i-1] = None 
 
@@ -28,14 +28,14 @@ def delete_data(position) :
 		print("데이터를 삭제할 범위를 벗어났습니다.")
 		return
 
-	kLen = len(katok)
+	k_len = len(katok)
 	katok[position] = None	# 데이터 삭제
     
-	for i in range(position+1, kLen) :
+	for i in range(position+1, k_len) :
 		katok[i-1] = katok[i]
 		katok[i] = None	# 배열의 제일 위치 삭제
 
-	del(katok[kLen-1])
+	del(katok[k_len-1])
     
 
 katok = []
