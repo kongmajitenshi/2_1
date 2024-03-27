@@ -11,7 +11,8 @@ namespace ControlStatement
         static void Test1() // 정적 메소드
         {
             string input = Console.ReadLine();
-            Console.WriteLine(input);
+            int number = int.Parse(input);
+            Console.WriteLine(number * 2);
         }
         static void Test2() // 정적 메소드
         {
@@ -23,7 +24,7 @@ namespace ControlStatement
         }
         static void Main(string[] args)
         {
-
+            Test1();
         }
 
 
