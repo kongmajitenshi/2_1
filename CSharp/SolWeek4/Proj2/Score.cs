@@ -8,7 +8,7 @@ namespace Proj2
 {
     internal class Score
     {
-        //필드(field) : class안에 선언한 변수
+        //인스턴스 필드(field) : class안에 선언한 변수
         public int Kor;
         public int Eng;
         public int Mat;
@@ -28,6 +28,17 @@ namespace Proj2
             get {
                 return (Kor + Eng + Mat) / 3;
             }
+        }
+
+        //매개변수 parameter
+        //외부에서 넘어오는 값(인자, argument)를
+        //현재 메소드 내에 저장하기 위해 선언하는 지역변수.
+        //지역변수이기 때문에 메소드 실행 종료시 자동으로 사라짐.(증요)
+        public Score(int kor, int eng, int mat) // 생성자 만든것.
+        {
+            Kor = kor;
+            Eng = eng;
+            Mat = mat;
         }
     }
 }

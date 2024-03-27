@@ -10,12 +10,12 @@ namespace Proj2
     {
         static void Main(string[] args)
         {
-            Score score1 = new Score();
-            score1.Kor = 10;
-            score1.Eng = 20;
-            score1.Mat = 30;
+            Score score1 = new Score(10, 20, 30);
+            //score1.Kor = 10;
+            //score1.Eng = 20;
+            //score1.Mat = 30;
 
-            Score score2 = new Score();
+            Score score2 = new Score(kor:10, eng:20, mat:30);
             score2.Kor = 10;
             score2.Eng = 20;
             score2.Mat = 30;

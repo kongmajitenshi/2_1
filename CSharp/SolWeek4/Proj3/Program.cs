@@ -10,9 +10,9 @@ namespace Proj3
     {
         static void Main(string[] args)
         {
-            Rect rect1 = new Rect();
-            rect1.Width = 20.1;
-            rect1.Height = 30.5;
+            Rect rect1 = new Rect(20.1, 30.5);
+            //rect1.Width = 20.1;
+            //rect1.Height = 30.5;
 
             Rect rect2 = new Rect();
             rect2.Width = 2;
